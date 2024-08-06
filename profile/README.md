@@ -15,7 +15,7 @@ The goal of the GRINS (Growing Resiliant INclusive and Sustainable) project is t
 
 The team of the University of Bergamo (UNIBG) involved in the spoke 0, more specifically in the Work Package 0.2 (WP0.2), leaded by Prof. Alessandro Fassò, is proposing to use a common methodology for data harmonisation among the groups of the project. In particular, these methods are suitable for spatial and temporal data. UNIBG works mainly with environmental data: weather, air quality and emissions. Harmonised data, with the same spatial and temporal resolution (i.e. municipality and daily), will compose the dataset used by the AMELIA platform. More specifically, this dataset will represent the deliverable D.0.2.1 of the GRINS project.
 
-# Import
+# Data Import
 
 Environmental data can be available from many different sources, therefore the first task is to identify the sources to be used. For example, environmental data can be observed by land monitoring stations or can be measured by satellites, or can be produced by mathematical models. More over there are several different organisations who manage the release of these data, with different procedures. A common advantage of environmental data, compared to economic or social data, is the fact that they usually are collected for communities and research purposes therefore they are often deliver without any fees. The download and management of this kind of data require several R routines to automatise the process: from the download to the final dataset.
 
