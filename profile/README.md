@@ -1,3 +1,5 @@
+This organisation has been created within the GRINS project to take trace of the scripts used for generating the deliverable of the projects. Several repositories are available and extensive descriptions are contained within each of them.
+
 <!--
 
 **Here are some ideas to get you started:**
