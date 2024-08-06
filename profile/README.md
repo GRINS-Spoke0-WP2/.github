@@ -1,4 +1,4 @@
-This organisation has been created within the GRINS project to take trace of the scripts used for generating the deliverable of the projects. Several repositories are available and extensive descriptions are contained within each of them. Within the same repo, there are several versions of scripts ( _v.0.0.1_ or _v.1.0.0_ etc.) that generate respective versions of dataset.
+This organisation has been created within the GRINS project to take trace of the scripts used for generating the deliverable of the projects. Several repositories are available and extensive descriptions are contained within each of them. Within the same repo, there are several versions of scripts (*v.0.0.1* or *v.1.0.0* etc.) that generate respective versions of dataset.
 
 <!--
 
@@ -22,10 +22,10 @@ The team of the University of Bergamo (UNIBG) involved in the spoke 0, more spec
 Environmental data can be available from many different sources, therefore the first task is to identify the sources to be used. For example, environmental data can be observed by land monitoring stations or can be measured by satellites, or can be produced by mathematical models. More over there are several different organisations who manage the release of these data, with different procedures. A common advantage of environmental data, compared to economic or social data, is the fact that they usually are collected for communities and research purposes therefore they are often deliver without any fees. The download and management of this kind of data require several R routines to automatise the process: from the download to the final dataset.
 
 ## Repositories
-1. *AQ-EEA* contains the data flow for air quality measurements obtained by the European Environmental Agency.
-2. *AQ-CAMS* contains the data flow for air quality numerical models output obtained by the Copernicus Atmosphere Monitoring Service (CAMS).
-3. *WE-C3S* contains the data flow for weather data obtained by the Climate Change Service (C3S).
-4. *EM-CAMS* contains the data flow for emission data obtained by the Copernicus Atmosphere Monitoring Service (CAMS).
+1. **AQ-EEA** contains the data flow for air quality measurements obtained by the European Environmental Agency.
+2. **AQ-CAMS** contains the data flow for air quality numerical models output obtained by the Copernicus Atmosphere Monitoring Service (CAMS).
+3. **WE-C3S** contains the data flow for weather data obtained by the Climate Change Service (C3S).
+4. **EM-CAMS** contains the data flow for emission data obtained by the Copernicus Atmosphere Monitoring Service (CAMS).
 
 # Modelling
 
