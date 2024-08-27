@@ -1,4 +1,4 @@
-This organisation has been created within the GRINS project to take trace of the scripts used for generating some deliverables of the projects. Several repositories are available and extensive descriptions are contained within each of them. Within the same repository, there are several versions of scripts (*v.0.0.1* or *v.1.0.0* etc.) that generate respective versions of dataset.
+This organisation has been created within the GRINS project to take trace of the scripts used for generating intermediate and final outputs of the projects. Several repositories are available and extensive descriptions are contained within each of them. Within the same repository, there are several versions of scripts (*v.0.0.1* or *v.1.0.0* etc.) that generate respective versions of dataset.
 
 <!--
 
@@ -11,15 +11,15 @@ This organisation has been created within the GRINS project to take trace of the
 🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 -->
 
-# Final Goal
+# GRINS Goal
 
 The goal of the GRINS (Growing Resiliant INclusive and Sustainable) project is to help the Italian community to grow efficiently as well as resilient, inclusive and sustainable. This important and challenging goal will be reached thank to the deeper comprehension of the reality. Data are the mirror of reality, but they must be collected, validated, re-organised, harmonised, analysed, visualised and finally interpreted. Statistical tools are the only instruments capable of performing these operations on the data, so they are indispensable for achieving the goals of the GRINS project.
 
 The team of the University of Bergamo (UNIBG) involved in the spoke 0, more specifically in the Work Package 0.2 (WP0.2), leaded by Prof. Alessandro Fassò, is proposing to use a common methodology for data harmonisation among the groups of the project. In particular, these methods are suitable for spatial and temporal data. UNIBG works mainly with environmental data: weather, air quality and emissions. Harmonised data, with the same spatial and temporal resolution (i.e. municipality and daily), will compose the dataset used by the AMELIA platform. More specifically, this dataset will represent the deliverable D.0.2.1 of the GRINS project.
 
-# Data Import
+# Repositories
 
-Environmental data can be available from many different sources, therefore the first task is to identify the sources to be used. For example, environmental data can be observed by land monitoring stations or can be measured by satellites, or can be produced by mathematical models. More over there are several different organisations who manage the release of these data, with different procedures. A common advantage of environmental data, compared to economic or social data, is the fact that they usually are collected for communities and research purposes therefore they are often deliver without any fees. The download and management of this kind of data require several R routines to automatise the process: from the download to the final dataset. Different acronyms indicate different dimensions: **AQ** for Air Quality, **WE** for Weather, **EM** for Emissions.
+Environmental data include different dimensions represented here by different acronyms: **AQ** for Air Quality, **WE** for Weather, **EM** for Emissions. Within the same dimension, data can be substantially different: observed by land monitoring stations, measured by satellites, produced by mathematical models, and others. Several different organisations managing the release of these data, use different procedures. For this reason, the pair dimension-source is used identifto identify a dataset. Each dataset has his own repository. For example, the air quality data (AQ) downloaded from the European Environmental Agency (EEA) is a repository called **AQ-EEA**. Each repository containes the code used from the download to the final dataset. Common tasks operated with R routines within these repositories are: automatic download, converting format (e.g. from csv or netcdf to Rdata), changing temporal resolution (e.g. from hourly to daily), solving critical situations about the quality of raw data (e.g. errors in the raw data), quality check (e.g. removing anomalies in the data). The spatial resolution is not changed. For the change of the spatial resolution we use a statistical modelling approach. The repositories linked to these operations are under the dimension **FRK** (Fixed Rank Kriging) that is the acronym of the model used to tackle the problems of change of support and up/down-scaling faced during the change of spatial resolution. 
 
 ## Repositories
 1. **AQ-EEA** contains the data flow for air quality measurements obtained by the European Environmental Agency.
