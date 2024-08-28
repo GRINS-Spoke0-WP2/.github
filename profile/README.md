@@ -1,23 +1,20 @@
-This organisation has been created within the GRINS project to take trace of the scripts used for generating intermediate and final outputs of the projects. Several repositories are available and extensive descriptions are contained within each of them. Within the same repository, there are several versions of scripts (*v.0.0.1* or *v.1.0.0* etc.) that generate respective versions of datasets.
-
-<!--
-
-**Here are some ideas to get you started:**
-
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
-
 # GRINS - Growing Resilient, INclusive and Sustainable
 
-Grins produces frontier research in the economic-political-social science and data science spectrum to provide scientific evidence to guide public policy as well as the choices of citizens and companies in complex decision-making contexts.
+Grins produces frontier research in the economic-political-social science and data science spectrum to provide scientific evidence to guide public policy as well as the choices of citizens and companies in complex decision-making contexts. Grins' mission translates into the realisation of an open data platform designed to support the decision-making processes of all actors, from citizens to administrators, through the production of high quality statistical information and analysis, in compliance with strict professional ethical principles and the most advanced scientific standards. 
+
+## Spoke 0
+
+Spoke 0, or the Hub, is entirely dedicated to the construction, development and maintenance of the AMELIA data platform. The other eight thematic Spokes will provide Spoke 0 with primary sources, intermediate data, statistical analyses, software codes and final deliverables, which will be processed and harmonised through the platform.
 
 The goal of the GRINS (Growing Resiliant INclusive and Sustainable) project is to help the Italian community to grow efficiently as well as resilient, inclusive and sustainable. This important and challenging goal will be reached thank to the deeper comprehension of the reality. Data are the mirror of reality, but they must be collected, validated, re-organised, harmonised, analysed, visualised and finally interpreted. Statistical tools are the only instruments capable of performing these operations on the data, so they are indispensable for achieving the goals of the GRINS project.
 
+### Work Package 0.2
+
+Work Package 0.2 focuses on ensuring the quality of the indicators available on the platform referring to the economic actors and territories examined, spatially and temporally determined, obtained by means of classical statistical models and machine learning techniques. These indicators will be based on harmonised datasets obtained from the integration of heterogeneous and georeferenced data sources. Frontier research in statistical science and machine learning will be used to build pilot statistical models for record linkage and statistical matching of survey data, spatio-temporal fusion of data, e.g. from Copernicus sources, and small area estimation. The quality of the developed indicators will be evaluated in accordance with the FAIR, SAFE and open data principles.
+
 The team of the University of Bergamo (UNIBG) involved in the spoke 0, more specifically in the Work Package 0.2 (WP0.2), leaded by Prof. Alessandro Fassò, is proposing to use a common methodology for data harmonisation among the groups of the project. In particular, these methods are suitable for spatial and temporal data. UNIBG works mainly with environmental data: weather, air quality and emissions. Harmonised data, with the same spatial and temporal resolution (i.e. municipality and daily), will compose the dataset used by the AMELIA platform. More specifically, this dataset will represent the deliverable D.0.2.1 of the GRINS project.
+
+
 
 # Repositories
 
@@ -27,6 +24,8 @@ Environmental data include different dimensions represented here by different ac
 2. **AQ-CAMS** contains the data flow for air quality numerical models output obtained by the Copernicus Atmosphere Monitoring Service (CAMS).
 3. **WE-C3S** contains the data flow for weather data obtained by the Climate Change Service (C3S).
 4. **EM-CAMS** contains the data flow for emission data obtained by the Copernicus Atmosphere Monitoring Service (CAMS).
+
+This organisation has been created within the GRINS project to take trace of the scripts used for generating intermediate and final outputs of the projects. Several repositories are available and extensive descriptions are contained within each of them. Within the same repository, there are several versions of code (*v.0.0.1* or *v.1.0.0* etc.) that generate respective versions of datasets.
 
 # Modelling
 
