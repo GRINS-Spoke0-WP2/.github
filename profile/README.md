@@ -11,7 +11,9 @@ This organisation has been created within the GRINS project to take trace of the
 🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 -->
 
-# GRINS Goal
+# GRINS - Growing Resilient, INclusive and Sustainable
+
+Grins produces frontier research in the economic-political-social science and data science spectrum to provide scientific evidence to guide public policy as well as the choices of citizens and companies in complex decision-making contexts.
 
 The goal of the GRINS (Growing Resiliant INclusive and Sustainable) project is to help the Italian community to grow efficiently as well as resilient, inclusive and sustainable. This important and challenging goal will be reached thank to the deeper comprehension of the reality. Data are the mirror of reality, but they must be collected, validated, re-organised, harmonised, analysed, visualised and finally interpreted. Statistical tools are the only instruments capable of performing these operations on the data, so they are indispensable for achieving the goals of the GRINS project.
 
