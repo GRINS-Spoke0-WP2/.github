@@ -1,4 +1,4 @@
-This organisation has been created within the GRINS project to take trace of the scripts used for generating intermediate and final outputs of the projects. Several repositories are available and extensive descriptions are contained within each of them. Within the same repository, there are several versions of scripts (*v.0.0.1* or *v.1.0.0* etc.) that generate respective versions of dataset.
+This organisation has been created within the GRINS project to take trace of the scripts used for generating intermediate and final outputs of the projects. Several repositories are available and extensive descriptions are contained within each of them. Within the same repository, there are several versions of scripts (*v.0.0.1* or *v.1.0.0* etc.) that generate respective versions of datasets.
 
 <!--
 
