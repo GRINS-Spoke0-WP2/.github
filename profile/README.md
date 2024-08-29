@@ -4,7 +4,7 @@ Grins produces frontier research in the economic-political-social science and da
 
 ## Spoke 0
 
-Spoke 0, or the Hub, is entirely dedicated to the construction, development and maintenance of the AMELIA data platform. The other eight thematic Spokes will provide Spoke 0 with primary sources, intermediate data, statistical analyses, software codes and final deliverables, which will be processed and harmonised through the platform.
+Spoke 0, or the Hub, is entirely dedicated to the construction, development and maintenance of the AMELIA (dAta platforM for the transfEr of knowLedge and statistIcal Analysis) data platform. The other eight thematic Spokes will provide Spoke 0 with primary sources, intermediate data, statistical analyses, software codes and final deliverables, which will be processed and harmonised through the platform.
 
 The goal of the AMELIA platform is to help the Italian community to grow efficiently as well as resilient, inclusive and sustainable. This important and challenging platform will be used toward a deeper comprehension of the reality. Data are the mirror of reality, however they must be collected, validated, re-organised, harmonised, analysed, visualised and finally interpreted. Statistical tools are the only instruments capable of performing these operations on the data, so they are indispensable for achieving the goals of the AMELIA platform, and therefore of the GRINS project.
 
