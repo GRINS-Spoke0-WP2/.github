@@ -1,6 +1,6 @@
 # GRINS - Growing Resilient, INclusive and Sustainable
 
-Grins produces frontier research in the economic-political-social science and data science spectrum to provide scientific evidence to guide public policy as well as the choices of citizens and companies in complex decision-making contexts. Grins' mission translates into the realisation of an open data platform designed to support the decision-making processes of all actors, from citizens to administrators, through the production of high quality statistical information and analysis, in compliance with strict professional ethical principles and the most advanced scientific standards. 
+GRINS ([link](https://www.grins.it)) produces frontier research in the economic-political-social science and data science spectrum to provide scientific evidence to guide public policy as well as the choices of citizens and companies in complex decision-making contexts. Grins' mission translates into the realisation of an open data platform designed to support the decision-making processes of all actors, from citizens to administrators, through the production of high quality statistical information and analysis, in compliance with strict professional ethical principles and the most advanced scientific standards. 
 
 ## Spoke 0
 
