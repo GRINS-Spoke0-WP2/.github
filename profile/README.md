@@ -31,6 +31,14 @@ Environmental data include different dimensions represented here by different ac
 3. **WE-C3S** contains the data flow for weather data obtained by the Climate Change Service (C3S).
 4. **EM-CAMS** contains the data flow for emission data obtained by the Copernicus Atmosphere Monitoring Service (CAMS).
 
+# Available data (updated 24-09-2024)
+
+| Repo    | Description                  | Period    |
+|---------|------------------------------|-----------|
+| AQ-EEA  | Air quality station measures | 2013-2023 |
+| AQ-CAMS | Air quality numerical output | 2013-2023 |
+| WE-C3S  | Weather variables            | 2013-2023 |
+| EM-CAMS | Emissions variables          | 2013-2023 |
 
 # Modelling
 
