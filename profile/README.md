@@ -1,6 +1,6 @@
 # Organisation of Work Package 2 - Spoke 0 - GRINS (Growing Resiliant, INclusive and Sustainable)
 
-This organization on GitHub stems from the need to collect in one place the code produced by the Bergamo team related to downloading and handling environmental data: climate, air quality and emissions. More specifically, this reproducible code will enter the AMELIA platform automatising the download process.
+This organization on GitHub stems from the need to collect in one place the code produced by the Bergamo team related to downloading and handling environmental data: climate, air quality and emissions. More specifically, this reproducible code will enter the AMELIA platform for the automatisation of the download process, to make the AMELIA platform updatable every release of dataasets.
 
 Several repositories can be found within the organization, each of them almost independent. After downloading the data and preparing them for use, there is a repository that refers to the statistical model used for the techniques of data fusion, change of spatial and temporal support, and uncertainty quantification.
 
