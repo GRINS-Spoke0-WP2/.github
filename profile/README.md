@@ -1,14 +1,20 @@
-# GRINS - Growing Resilient, INclusive and Sustainable
+# Organisation of Work Package 2 - Spoke 0 - GRINS (Growing Resiliant, INclusive and Sustainable)
+
+This organization on GitHub stems from the need to collect in one place the code produced by the Bergamo team related to downloading and handling environmental data: climate, air quality and emissions. 
+
+Several repositories can be found within the organization, each of them almost independent. After downloading the data and preparing them for use, there is a repository that refers to the statistical model used for the techniques of data fusion, change of spatial and temporal support, and uncertainty quantification.
+
+## What is GRINS?
 
 GRINS ([link](https://www.grins.it)) produces frontier research in the economic-political-social science and data science spectrum to provide scientific evidence to guide public policy as well as the choices of citizens and companies in complex decision-making contexts. Grins' mission translates into the realisation of an open data platform designed to support the decision-making processes of all actors, from citizens to administrators, through the production of high quality statistical information and analysis, in compliance with strict professional ethical principles and the most advanced scientific standards. 
 
-## Spoke 0
+### The Spoke 0
 
 Spoke 0, or the Hub, is entirely dedicated to the construction, development and maintenance of the AMELIA (dAta platforM for the transfEr of knowLedge and statistIcal Analysis) data platform. The other eight thematic Spokes will provide Spoke 0 with primary sources, intermediate data, statistical analyses, software codes and final deliverables, which will be processed and harmonised through the platform.
 
 The goal of the AMELIA platform is to help the Italian community to grow efficiently as well as resilient, inclusive and sustainable. This important and challenging platform will be used toward a deeper comprehension of the reality. Data are the mirror of reality, however they must be collected, validated, re-organised, harmonised, analysed, visualised and finally interpreted. Statistical tools are the only instruments capable of performing these operations on the data, so they are indispensable for achieving the goals of the AMELIA platform, and therefore of the GRINS project.
 
-### Work Package 0.2
+#### The Work Package 2
 
 Work Package 0.2 focuses on ensuring the quality of the indicators available on the platform referring to the economic actors and territories examined, spatially and temporally determined, obtained by means of classical statistical models and machine learning techniques. These indicators will be based on harmonised datasets obtained from the integration of heterogeneous and georeferenced data sources. Frontier research in statistical science and machine learning will be used to build pilot statistical models for record linkage and statistical matching of survey data, spatio-temporal fusion of data, e.g. from Copernicus sources, and small area estimation. The quality of the developed indicators will be evaluated in accordance with the FAIR, SAFE and open data principles.
 
