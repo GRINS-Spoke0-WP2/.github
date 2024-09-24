@@ -31,7 +31,7 @@ Environmental data include different dimensions represented here by different ac
 3. **WE-C3S** contains the data flow for weather data obtained by the Climate Change Service (C3S).
 4. **EM-CAMS** contains the data flow for emission data obtained by the Copernicus Atmosphere Monitoring Service (CAMS).
 
-# Available data (updated 24-09-2024)
+## Available input data (updated 24-09-2024)
 
 | Repo    | Description                  | Period    |
 |---------|------------------------------|-----------|
@@ -40,7 +40,7 @@ Environmental data include different dimensions represented here by different ac
 | WE-C3S  | Weather variables            | 2013-2023 |
 | EM-CAMS | Emissions variables          | 2013-2023 |
 
-# Modelling
+## Statistical Modelling for Data Fusion and Change of Support Problem (COSP)
 
 To reach the ultimate goal of the GRINS project, we need an harmonised dataset at municipal level, daily, containing all the variables considered. However, while administrative data come naturally at municipal level, environmental data can have different resolutions, as points-referenced or grids, but almost never at municipal level. We decided to tackle this problem using a statistical approach. Different models are considered: Hidden Dynamic Geostatistical Model (HDGM), Fixed Rank Kriging (FRK), and other models are under investigation.
 
