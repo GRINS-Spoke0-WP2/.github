@@ -6,7 +6,11 @@ Several repositories can be found within the organization, each of them almost i
 
 ## What is GRINS?
 
-GRINS ([link](https://www.grins.it)) produces frontier research in the economic-political-social science and data science spectrum to provide scientific evidence to guide public policy as well as the choices of citizens and companies in complex decision-making contexts. Grins' mission translates into the realisation of an open data platform designed to support the decision-making processes of all actors, from citizens to administrators, through the production of high quality statistical information and analysis, in compliance with strict professional ethical principles and the most advanced scientific standards. 
+GRINS ([link](https://www.grins.it)) produces frontier research in the economic-political-social science and data science spectrum to provide scientific evidence to guide public policy as well as the choices of citizens and companies in complex decision-making contexts. Grins' mission translates into the realisation of an open data platform designed to support the decision-making processes of all actors, from citizens to administrators, through the production of high quality statistical information and analysis, in compliance with strict professional ethical principles and the most advanced scientific standards.
+
+The goal of the GRINS (Growing Resiliant INclusive and Sustainable) project is to help the Italian community to grow efficiently as well as resilient, inclusive and sustainable. This important and challenging goal will be reached thank to the deeper comprehension of the reality. Data are the mirror of reality, but they must be collected, validated, re-organised, harmonised, analysed, visualised and finally interpreted. Statistical tools are the only instruments capable of performing these operations on the data, so they are indispensable for achieving the goals of the GRINS project.
+
+The team of the University of Bergamo (UNIBG) involved in the spoke 0, more specifically in the Work Package 0.2 (WP0.2), leaded by Prof. Alessandro Fassò, is proposing to use a common methodology for data harmonisation among the groups of the project. In particular, these methods are suitable for spatial and temporal data. UNIBG works mainly with environmental data: weather, air quality and emissions. Harmonised data, with the same spatial and temporal resolution (i.e. municipality and daily), will compose the dataset used by the AMELIA platform. More specifically, this dataset will represent the deliverable D.0.2.1 of the GRINS project.
 
 ### The Spoke 0
 
@@ -41,6 +45,16 @@ Environmental data include different dimensions represented here by different ac
 | AQ-CAMS | Air quality numerical output | 2013-2023 |
 | WE-C3S  | Weather variables            | 2013-2023 |
 | EM-CAMS | Emissions variables          | 2013-2023 |
+
+### Air Quality data (AQ)
+
+Air quality data are usually **observed** or **modeled**. **Observed** data represent the measurements made by operators and machines. They reflect the best approximation of the reality but they are prone to missingness, measurement errors, heterogeneity among measurements procedures, sparse availability, and other issues. **Modeled** data, on the other hand, generally show completeness and uniformity but they can significantly differ from the reality. Almost all mathematical models generating modeled data are divided in two different categories: **deterministic** and **stochastic**.
+
+For the Italian domain, we retrieve AQ data from two different sources: the European Environmental Agency (**EEA**) and the Copernicus Atmosphere Monitoring Service (**CAMS**). **EEA** data are **observed** from the air quality monitoring stations and **CAMS** data are based on an ensemble of nine air quality data assimilation systems across Europe that use CTMs as based. Technical details about the sources are contained in the respective repositories. EEA data are available just at specific locations (the air quality monitoring network) while CAMS products are available on a full grid (cell centers lie on orthogonal straight lines) and cropped over the Italian domain. To use both the EEA and CAMS data simultaneously, data fusion techniques are required. 
+
+### Weather data (WE)
+
+### Emissions data (EM)
 
 ## Modelling
 
