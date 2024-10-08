@@ -41,7 +41,7 @@ Environmental data include different dimensions represented here by different ac
 
 INPUT
 
-| Dim | Source | git repo | version | Dataset                | Brief description                                     | Period    | Variables selected                                                             | temporal resolution    | spatial resolution                           |
+| Dim | Source | GitHub repo | version | Dataset                | Brief description                                     | Period    | Variables selected                                                             | temporal resolution    | spatial resolution                           |
 |-----------|--------|-------------|---------|------------------------|-------------------------------------------------------|-----------|--------------------------------------------------------------------------------|------------------------|----------------------------------------------|
 | AQ        | EEA    | AQ-EEA      | v.1.0.0 | Airbase                | measured air pollutant transmitted to the EEA network | -         | -                                                                              | -                      | -                                            |
 | AQ        | EEA    | AQ-EEA      | v.1.0.0 | E1a                    |                                                       | 2013-2022 | CO, NH3, NO, NO2, O3, PM2.5, PM10, SO2                                         | hourly,bi-hourly,daily | point referenced (coordinates from metadata) |
