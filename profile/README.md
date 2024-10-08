@@ -52,8 +52,6 @@ _Table 1: Summary of inputs_
 | EM      | CAMS       | EM-CAMS         | v.0.0.1     | CAMS-GLOB-ANT v6.2     | emissions from CAMS      | 2000-2024  | NO2                                                                                                                            | monthly                 | 0.1° x 0.1°            |
 
 <p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
 
 #### Intermediate products
 _Table 2: Summary of intermediates products_
@@ -69,8 +67,6 @@ _Table 2: Summary of intermediates products_
 | WE      | C3S        | WE-C3S          | v.1.0.0     | none                       | none                        | hourly -> daily             | mean                                        |
 | EM      | CAMS       | EM-CAMS         | v.0.0.1     | none                       | none                        | monthly-> daily             | piecewise constant function                 |
 
-<p>&nbsp;</p>
-<p>&nbsp;</p>
 <p>&nbsp;</p>
 
 #### Outputs
