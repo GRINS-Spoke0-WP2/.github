@@ -30,7 +30,7 @@ This organisation has been created within the GRINS project to take trace of the
 
 ## Data 
 
-Environmental data include different dimensions represented here by different acronyms: **AQ** for Air Quality, **WE** for Weather, **EM** for Emissions. Within the same dimension, data can be substantially different: observed by land monitoring stations, measured by satellites, produced by mathematical models, and others. Several different organisations managing the release of these data, use different procedures. For this reason, the pair dimension-source is used to identify a dataset. Each dataset has his own repository. For example, the air quality data (AQ) downloaded from the European Environmental Agency (EEA) is a repository called **AQ-EEA**. Each repository containes the code used from the download to the final dataset. Common tasks operated with R routines within these repositories are: automatic download, converting format (e.g. from csv or netcdf to Rdata), changing temporal resolution (e.g. from hourly to daily), solving critical situations about the quality of raw data (e.g. errors in the raw data), quality check (e.g. removing anomalies in the data). The spatial resolution is not changed. For data, the following repositories are available:
+Environmental data include different dimensions represented here by different acronyms: **AQ** for Air Quality, **WE** for Weather, **EM** for Emissions. Within the same dimension, data can be substantially different: observed by land monitoring stations, measured by satellites, produced by mathematical models, and others. Several different organisations managing the release of these data, use different procedures. For this reason, the pair dimension-source is used to identify a dataset. Each dataset has his own repository. For example, the air quality data (AQ) downloaded from the European Environmental Agency (EEA) is a repository called **AQ-EEA**. Each repository containes the code used from the download to the final dataset. Common tasks operated with R routines within these repositories are: automatic download, converting format (e.g. from csv or netcdf to Rdata), changing temporal resolution (e.g. from hourly to daily), solving critical situations about the quality of raw data (e.g. errors in the raw data), quality check (e.g. removing anomalies in the data). For data, the following repositories are available:
 
 1. **AQ-EEA** contains the data flow for air quality measurements obtained by the European Environmental Agency.
 2. **AQ-CAMS** contains the data flow for air quality numerical models output obtained by the Copernicus Atmosphere Monitoring Service (CAMS).
@@ -53,8 +53,8 @@ _Table 1: Summary of inputs_
 
 <p>&nbsp;</p>
 
-#### Intermediate products
-_Table 2: Summary of intermediates products_
+#### Intermediate transformation
+_Table 2: Summary of intermediates transformation_
 | **Dim** | **Source** | **GitHub repo** | **version** | **spatial transformation** | **techniques used (space)** | **temporal transformation** | **techniques used (time)**                  |
 |---------|------------|-----------------|-------------|----------------------------|-----------------------------|-----------------------------|---------------------------------------------|
 | AQ      | EEA        | AQ-EEA          | v.1.0.0     | -                          | -                           | -                           | -                                           |
@@ -92,10 +92,18 @@ For the Italian domain, we retrieve AQ data from two different sources: the Euro
 
 ### Weather data (WE)
 
+Meteorology plays a crucial role in studying air quality because atmospheric conditions directly influence the dispersion, concentration, and movement of pollutants. Wind patterns can transport contaminants over long distances, while temperature, humidity, and pressure affect chemical reactions in the air. These meteorological variables also capture the seasonal effects, as air quality tends to fluctuate with different weather patterns throughout the year. For instance, winter inversions can trap pollutants, while summer heat can intensify smog. Accurate meteorological monitoring is therefore essential to predict air quality changes and develop effective environmental protection strategies.
+
 ### Emissions data (EM)
+
+Emissions play a vital role in studying air quality, as they are the primary source of pollutants released into the atmosphere from various activities, such as transportation, industry, and agriculture. Emission data can be represented in different forms, such as spatially explicit maps or point measurements, and they can be aggregated on various time scales, ranging from annual inventories to more detailed monthly or even daily estimates. These datasets are developed using either top-down approaches, which rely on large-scale inventories, satellite data, and atmospheric modeling, or bottom-up methods that compile detailed local measurements from specific sources, such as factories or traffic data. The combination of these approaches allows for a comprehensive view of emission patterns. By using statistical space-time models, researchers can integrate these datasets, capturing the variability of emissions across both space and time, and analyze how they interact with weather conditions and other factors to impact air quality. This approach enables more precise identification of pollution sources and supports the design of targeted mitigation strategies.
 
 ## Modelling
 
 To reach the ultimate goal of the GRINS project, we need an harmonised dataset at municipal level, daily, containing all the variables considered. However, while administrative data come naturally at municipal level, environmental data can have different resolutions, as points-referenced or grids, but almost never at municipal level. For the change of the spatial resolution we use a statistical modelling approach. The repositories linked to these operations are under the dimension **FRK** (Fixed Rank Kriging) that is the acronym of the model used to tackle the problems of change of support and up/down-scaling faced during the change of spatial resolution. 
+
+For modelling, the following repositories are available:
+1. **FRK-DataFusion**
+2. **PE-Interpolation**
 
 
