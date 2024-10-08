@@ -37,10 +37,8 @@ Environmental data include different dimensions represented here by different ac
 3. **WE-C3S** contains the data flow for weather data obtained by the Climate Change Service (C3S).
 4. **EM-CAMS** contains the data flow for emission data obtained by the Copernicus Atmosphere Monitoring Service (CAMS).
 
-### Available input data (updated 08-10-2024)
-
-#### Input 
-_Table X.X.X Summary of inputs_
+#### Input data
+_Table 1: Summary of inputs_
 | **Dim** | **Source** | **GitHub repo** | **version** | **Dataset**            | **Brief description**    | **Period** | **Variables selected**                                                                                                         | **temporal resolution** | **spatial resolution** |
 |---------|------------|-----------------|-------------|------------------------|--------------------------|------------|--------------------------------------------------------------------------------------------------------------------------------|-------------------------|------------------------|
 | AQ      | EEA        | AQ-EEA          | v.1.0.0     | Airbase                | measured air pollution   | -          | -                                                                                                                              | -                       | -                      |
@@ -58,7 +56,7 @@ _Table X.X.X Summary of inputs_
 <p>&nbsp;</p>
 
 #### Intermediate products
-_Table X.X.X Summary of intermediates_
+_Table 2: Summary of intermediates products_
 | **Dim** | **Source** | **GitHub repo** | **version** | **spatial transformation** | **techniques used (space)** | **temporal transformation** | **techniques used (time)**                  |
 |---------|------------|-----------------|-------------|----------------------------|-----------------------------|-----------------------------|---------------------------------------------|
 | AQ      | EEA        | AQ-EEA          | v.1.0.0     | -                          | -                           | -                           | -                                           |
@@ -76,7 +74,7 @@ _Table X.X.X Summary of intermediates_
 <p>&nbsp;</p>
 
 #### Outputs
-_Table X.X.X Summary of outputs_
+_Table 3: Summary of outputs_
 | **Dim** | **Source** | **GitHub repo** | **version** | **period** | **temporal resolution** | **spatial resolution** | **#files** | **overall output dimension** | **format** |
 |---------|------------|-----------------|-------------|------------|-------------------------|------------------------|------------|------------------------------|------------|
 | AQ      | EEA        | AQ-EEA          | v.1.0.0     |            | -                       | -                      | -          | -                            | -          |
