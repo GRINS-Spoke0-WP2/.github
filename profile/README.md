@@ -100,7 +100,7 @@ Emissions play a vital role in studying air quality, as they are the primary sou
 
 ## Modelling
 
-To reach the ultimate goal of the GRINS project, we need an harmonised dataset at municipal level, daily, containing all the variables considered. However, while administrative data come naturally at municipal level, environmental data can have different resolutions, as points-referenced or grids, but almost never at municipal level. For the change of the spatial resolution we use a statistical modelling approach. The repositories linked to these operations are under the dimension **FRK** (Fixed Rank Kriging) that is the acronym of the model used to tackle the problems of change of support and up/down-scaling faced during the change of spatial resolution. 
+To reach the ultimate goal of the GRINS project, we need an harmonised dataset at municipal level, daily, containing all the variables considered. However, while administrative data come naturally at municipal level, environmental data can have different resolutions, as points-referenced or grids, but almost never at municipal level. For the change of the spatial resolution we use a statistical modelling approach. The repositories linked to these operations are under the dimension **FRK-DataFusion** (Fixed Rank Kriging) that is the acronym of the model used to tackle the problems of change of support and up/down-scaling faced during the change of spatial resolution. For meteorological variables, considering the high-quality of ERA5s products, a point-extraction is made to convert to municipal data. The code is in **PE-Interpolaion** (Point-Extraction Interpolation
 
 For modelling, the following repositories are available:
 1. **FRK-DataFusion**
