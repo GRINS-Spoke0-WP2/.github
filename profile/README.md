@@ -39,7 +39,7 @@ Environmental data include different dimensions represented here by different ac
 
 ### Available input data (updated 08-10-2024)
 
-_Table X.X.X summary of inputs_
+_Table X.X.X Summary of inputs_
 | **Dim** | **Source** | **GitHub repo** | **version** | **Dataset**            | **Brief description**    | **Period** | **Variables selected**                                                                                                         | **temporal resolution** | **spatial resolution** |
 |---------|------------|-----------------|-------------|------------------------|--------------------------|------------|--------------------------------------------------------------------------------------------------------------------------------|-------------------------|------------------------|
 | AQ      | EEA        | AQ-EEA          | v.1.0.0     | Airbase                | measured air pollution   | -          | -                                                                                                                              | -                       | -                      |
@@ -53,7 +53,9 @@ _Table X.X.X summary of inputs_
 | EM      | CAMS       | EM-CAMS         | v.0.0.1     | CAMS-GLOB-ANT v6.2     | emissions from CAMS      | 2000-2024  | NO2                                                                                                                            | monthly                 | 0.1° x 0.1°            |
 
 
-_Table X.X.X summary of intermediates_
+
+
+_Table X.X.X Summary of intermediates_
 | **Dim** | **Source** | **GitHub repo** | **version** | **spatial transformation** | **techniques used (space)** | **temporal transformation** | **techniques used (time)**                  |
 |---------|------------|-----------------|-------------|----------------------------|-----------------------------|-----------------------------|---------------------------------------------|
 | AQ      | EEA        | AQ-EEA          | v.1.0.0     | -                          | -                           | -                           | -                                           |
@@ -67,7 +69,9 @@ _Table X.X.X summary of intermediates_
 | EM      | CAMS       | EM-CAMS         | v.0.0.1     | none                       | none                        | monthly-> daily             | piecewise constant function                 |
 
 
-_Table X.X.X summary of outputs_
+
+
+_Table X.X.X Summary of outputs_
 | **Dim** | **Source** | **GitHub repo** | **version** | **period** | **temporal resolution** | **spatial resolution** | **#files** | **overall output dimension** | **format** |
 |---------|------------|-----------------|-------------|------------|-------------------------|------------------------|------------|------------------------------|------------|
 | AQ      | EEA        | AQ-EEA          | v.1.0.0     |            | -                       | -                      | -          | -                            | -          |
