@@ -39,8 +39,7 @@ Environmental data include different dimensions represented here by different ac
 
 ### Available input data (updated 08-10-2024)
 
-INPUT
-
+_Table X.X.X summary of inputs_
 | **Dim** | **Source** | **GitHub repo** | **version** | **Dataset**            | **Brief description**    | **Period** | **Variables selected**                                                                                                         | **temporal resolution** | **spatial resolution** |
 |---------|------------|-----------------|-------------|------------------------|--------------------------|------------|--------------------------------------------------------------------------------------------------------------------------------|-------------------------|------------------------|
 | AQ      | EEA        | AQ-EEA          | v.1.0.0     | Airbase                | measured air pollution   | -          | -                                                                                                                              | -                       | -                      |
@@ -54,13 +53,32 @@ INPUT
 | EM      | CAMS       | EM-CAMS         | v.0.0.1     | CAMS-GLOB-ANT v6.2     | emissions from CAMS      | 2000-2024  | NO2                                                                                                                            | monthly                 | 0.1° x 0.1°            |
 
 
-INTERMEDIATE
+_Table X.X.X summary of intermediates_
+| **Dim** | **Source** | **GitHub repo** | **version** | **spatial transformation** | **techniques used (space)** | **temporal transformation** | **techniques used (time)**                  |
+|---------|------------|-----------------|-------------|----------------------------|-----------------------------|-----------------------------|---------------------------------------------|
+| AQ      | EEA        | AQ-EEA          | v.1.0.0     | -                          | -                           | -                           | -                                           |
+| AQ      | EEA        | AQ-EEA          | v.1.0.0     | none                       | none                        | hourly/bi-hourly -> daily   | kalman smoother. Min,1q,mean,med,3q,max     |
+| AQ      | EEA        | AQ-EEA          | v.1.0.0     |                            |                             |                             |                                             |
+| AQ      | CAMS       | AQ-CAMS         | v.1.0.0     | none                       | none                        | hourly -> daily             | Min,1q,mean,med,3q,max                      |
+| WE      | C3S        | WE-C3S          | v.0.0.1     | none                       | none                        | hourly -> daily             | mean,min,max,mode depending on the variable |
+| WE      | C3S        | WE-C3S          | v.0.0.1     | -                          | -                           | -                           | -                                           |
+| WE      | C3S        | WE-C3S          | v.1.0.0     | ?                          | ?                           | ?                           | ?                                           |
+| WE      | C3S        | WE-C3S          | v.1.0.0     | none                       | none                        | hourly -> daily             | mean                                        |
+| EM      | CAMS       | EM-CAMS         | v.0.0.1     | none                       | none                        | monthly-> daily             | piecewise constant function                 |
 
 
-
-OUTPUT
-
-
+_Table X.X.X summary of outputs_
+| **Dim** | **Source** | **GitHub repo** | **version** | **period** | **temporal resolution** | **spatial resolution** | **#files** | **overall output dimension** | **format** |
+|---------|------------|-----------------|-------------|------------|-------------------------|------------------------|------------|------------------------------|------------|
+| AQ      | EEA        | AQ-EEA          | v.1.0.0     |            | -                       | -                      | -          | -                            | -          |
+| AQ      | EEA        | AQ-EEA          | v.1.0.0     | 2013-2023  | daily                   | point-ref              | 1          | 160/870 Mb                   | Rdata/csv  |
+| AQ      | EEA        | AQ-EEA          | v.1.0.0     | 2013-2023  | daily                   | point-ref              | 1          | 160/870 Mb                   | Rdata/csv  |
+| AQ      | CAMS       | AQ-CAMS         | v.1.0.0     | 2013-2023* | daily                   | 0.1° x 0.1°            | 80         | 2.4 Gb                       | Rdata      |
+| WE      | C3S        | WE-C3S          | v.0.0.1     | 2019-2023  | daily                   | 0.1° x 0.1°            | 1          | 1 Gb                         | netcdf     |
+| WE      | C3S        | WE-C3S          | v.0.0.1     | -          | -                       | -                      | -          | -                            | -          |
+| WE      | C3S        | WE-C3S          | v.1.0.0     | 2013-2023  | daily                   | 0.1° x 0.1°            | ?          | ?                            | ?          |
+| WE      | C3S        | WE-C3S          | v.1.0.0     | 2013-2023  | daily                   | 0.25° x 0.25°          | 1          | 54 Mb                        | Rdata      |
+| EM      | CAMS       | EM-CAMS         | v.0.0.1     | 2019-2023  | daily                   | 0.1° x 0.1°            | 1          | 1.83 Gb / 83 Mb              | csv/Rdata  |
 
 
 ### Air Quality data (AQ)
