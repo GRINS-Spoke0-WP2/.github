@@ -39,6 +39,7 @@ Environmental data include different dimensions represented here by different ac
 
 ### Available input data (updated 08-10-2024)
 
+#### Input 
 _Table X.X.X Summary of inputs_
 | **Dim** | **Source** | **GitHub repo** | **version** | **Dataset**            | **Brief description**    | **Period** | **Variables selected**                                                                                                         | **temporal resolution** | **spatial resolution** |
 |---------|------------|-----------------|-------------|------------------------|--------------------------|------------|--------------------------------------------------------------------------------------------------------------------------------|-------------------------|------------------------|
@@ -55,9 +56,8 @@ _Table X.X.X Summary of inputs_
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
 
+#### Intermediate products
 _Table X.X.X Summary of intermediates_
 | **Dim** | **Source** | **GitHub repo** | **version** | **spatial transformation** | **techniques used (space)** | **temporal transformation** | **techniques used (time)**                  |
 |---------|------------|-----------------|-------------|----------------------------|-----------------------------|-----------------------------|---------------------------------------------|
@@ -71,9 +71,11 @@ _Table X.X.X Summary of intermediates_
 | WE      | C3S        | WE-C3S          | v.1.0.0     | none                       | none                        | hourly -> daily             | mean                                        |
 | EM      | CAMS       | EM-CAMS         | v.0.0.1     | none                       | none                        | monthly-> daily             | piecewise constant function                 |
 
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 
-
-
+#### Outputs
 _Table X.X.X Summary of outputs_
 | **Dim** | **Source** | **GitHub repo** | **version** | **period** | **temporal resolution** | **spatial resolution** | **#files** | **overall output dimension** | **format** |
 |---------|------------|-----------------|-------------|------------|-------------------------|------------------------|------------|------------------------------|------------|
