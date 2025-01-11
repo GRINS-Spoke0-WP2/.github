@@ -57,14 +57,10 @@ _Table 1: Summary of inputs_
 _Table 2: Summary of intermediates transformation_
 | **Dim** | **Source** | **GitHub repo** | **version** | **spatial transformation** | **techniques used (space)** | **temporal transformation** | **techniques used (time)**                  |
 |---------|------------|-----------------|-------------|----------------------------|-----------------------------|-----------------------------|---------------------------------------------|
-| AQ      | EEA        | AQ-EEA          | v.1.0.0     | -                          | -                           | -                           | -                                           |
 | AQ      | EEA        | AQ-EEA          | v.1.0.0     | none                       | none                        | hourly/bi-hourly -> daily   | kalman smoother. Min,1q,mean,med,3q,max     |
-| AQ      | EEA        | AQ-EEA          | v.1.0.0     |                            |                             |                             |                                             |
 | AQ      | CAMS       | AQ-CAMS         | v.1.0.0     | none                       | none                        | hourly -> daily             | Min,1q,mean,med,3q,max                      |
 | WE      | C3S        | WE-C3S          | v.0.0.1     | none                       | none                        | hourly -> daily             | mean,min,max,mode depending on the variable |
-| WE      | C3S        | WE-C3S          | v.0.0.1     | -                          | -                           | -                           | -                                           |
-| WE      | C3S        | WE-C3S          | v.1.0.0     | ?                          | ?                           | ?                           | ?                                           |
-| WE      | C3S        | WE-C3S          | v.1.0.0     | none                       | none                        | hourly -> daily             | mean                                        |
+| WE      | C3S        | WE-C3S          | v.1.0.0     | none                       | none                        | hourly -> daily             | mean,min,max,mode depending on the variable |
 | EM      | CAMS       | EM-CAMS         | v.0.0.1     | none                       | none                        | monthly-> daily             | piecewise constant function                 |
 
 <p>&nbsp;</p>
@@ -102,8 +98,6 @@ Emissions play a vital role in studying air quality, as they are the primary sou
 
 To reach the ultimate goal of the GRINS project, we need an harmonised dataset at municipal level, daily, containing all the variables considered. However, while administrative data come naturally at municipal level, environmental data can have different resolutions, as points-referenced or grids, but almost never at municipal level. For the change of the spatial resolution we use a statistical modelling approach. The repositories linked to these operations are under the dimension **FRK-DataFusion** (Fixed Rank Kriging) that is the acronym of the model used to tackle the problems of change of support and up/down-scaling faced during the change of spatial resolution. For meteorological variables, considering the high-quality of ERA5s products, a point-extraction is made to convert to municipal data. The code is in **PE-Interpolaion** (Point-Extraction Interpolation
 
-For modelling, the following repositories are available:
-1. **FRK-DataFusion**
-2. **PE-Interpolation**
+
 
 
