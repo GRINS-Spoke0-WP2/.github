@@ -28,7 +28,11 @@ The team of the University of Bergamo (UNIBG) involved in the spoke 0, more spec
 
 This organisation has been created within the GRINS project to take trace of the scripts used for generating intermediate and final outputs of the projects. Several repositories are available and extensive descriptions are contained within each of them. Within the same repository, there are several versions of code (*v.0.0.1* or *v.1.0.0* etc.) that generate respective versions of datasets.
 
-## Data 
+Work is mainly divided in two parts: 
+- Input data
+- Statistical modelling
+
+## Input Data 
 
 Environmental data include different dimensions represented here by different acronyms: **AQ** for Air Quality, **WE** for Weather, **EM** for Emissions. Within the same dimension, data can be substantially different: observed by land monitoring stations, measured by satellites, produced by mathematical models, and others. Several different organisations managing the release of these data, use different procedures. For this reason, the pair dimension-source is used to identify a dataset. Each dataset has his own repository. For example, the air quality data (AQ) downloaded from the European Environmental Agency (EEA) is a repository called **AQ-EEA**. Each repository containes the code used from the download to the final dataset. Common tasks operated with R routines within these repositories are: automatic download, converting format (e.g. from csv or netcdf to Rdata), changing temporal resolution (e.g. from hourly to daily), solving critical situations about the quality of raw data (e.g. errors in the raw data), quality check (e.g. removing anomalies in the data). For data, the following repositories are available:
 
@@ -45,11 +49,9 @@ _Table 1: Summary of inputs_
 | AQ      | EEA        | AQ-EEA          | v.1.0.0     | E1a                    | measured air pollution   | 2013-2022  | CO, NH3, NO, NO2, O3, PM2.5, PM10, SO2                                                                                         | hourly,bi-hourly, daily | point referenced       |
 | AQ      | EEA        | AQ-EEA          | v.1.0.0     | E2a                    | measured air pollution   | 2023       | CO, NH3, NO, NO2, O3, PM2.5, PM10, SO2                                                                                         |                         |                        |
 | AQ      | CAMS       | AQ-CAMS         | v.1.0.0     | air quality reanalysis | air pollutant from CTMs  | 2013-2023  | NO2, CO, NH3, NMVOC, NO, O3, PM2.5, PM10, SO2                                                                                  | hourly                  | 0.1° x 0.1°            |
-| WE      | C3S        | WE-C3S          | v.0.0.1     | ERA5Land               | land-weather reanalysis  | 2013-2023  | high/low vegetation index, relative humidity, surf solar radiation, temperature, total precipitation, wind direction and speed | hourly                  | 0.1° x 0.1°            |
-| WE      | C3S        | WE-C3S          | v.0.0.1     | ERA5 Single Level      | weather reanalysis       | -          | -                                                                                                                              | -                       | -                      |
 | WE      | C3S        | WE-C3S          | v.1.0.0     | ERA5Land               | land-weather reanalysis  | 2013-2023  | high/low vegetation index, relative humidity, surf solar radiation, temperature, total precipitation, wind direction and speed | hourly                  | 0.1° x 0.1°            |
 | WE      | C3S        | WE-C3S          | v.1.0.0     | ERA5 Single Level      | weather model reanalysis | 2013-2023  | boundary layer height                                                                                                          | hourly                  | 0.25° x 0.25°          |
-| EM      | CAMS       | EM-CAMS         | v.0.0.1     | CAMS-GLOB-ANT v6.2     | emissions from CAMS      | 2000-2024  | NO2                                                                                                                            | monthly                 | 0.1° x 0.1°            |
+| EM      | CAMS       | EM-CAMS         | v.1.0.0     | CAMS-GLOB-ANT v6.2     | emissions from CAMS      | 2000-2024  | NO2                                                                                                                            | monthly                 | 0.1° x 0.1°            |
 
 <p>&nbsp;</p>
 
