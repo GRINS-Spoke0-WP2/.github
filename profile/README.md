@@ -103,7 +103,7 @@ To reach the ultimate goal of the GRINS project, we need an harmonised dataset a
 # For AMELIA
 
 | **Modules Level 1** | **Modules Level 2**   | **Modules Level 3**       | GitHub Repo | version | R core scripts        | Additional R scripts                                                        |
-|---------------------|-----------------------|---------------------------|-------------|---------|-----------------------|-----------------------------------------------------------------------------|
+|---------------------|-----------------------|---------------------------|----------------|---------|-----------------------|-----------------------------------------------------------------------------|
 | 123_Input           | 1_Download            | 1_Download_AQ_EEA         | AQ-EEA      | v.1.0.0 | EEA_download.R        | EEA_download(for).R                                                         |
 |                     |                       | 1_Download_AQ_CAMS        | AQ-CAMS     | v.1.0.0 | CAMS_download.R       | functions.R                                                                 |
 |                     |                       | 1_Download_WE_C3S         | WE-C3S      | v.1.0.0 | C3S_download.R        |
