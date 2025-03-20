@@ -100,6 +100,30 @@ Emissions play a vital role in studying air quality, as they are the primary sou
 
 To reach the ultimate goal of the GRINS project, we need an harmonised dataset at municipal level, daily, containing all the variables considered. However, while administrative data come naturally at municipal level, environmental data can have different resolutions, as points-referenced or grids, but almost never at municipal level. For the change of the spatial resolution we use a statistical modelling approach. The repositories linked to these operations are under the dimension **FRK-Modelling** (Fixed Rank Kriging) that is the acronym of the model used to tackle the problems of change of support and up/down-scaling faced during the change of spatial resolution. For meteorological variables, considering the high-quality of ERA5s products, a simple Inverse Distance Weighted (IDW) interpolation is made to convert to municipal data. 
 
+# For AMELIA
+
+| **Modules Level 1** | **Modules Level 2**   | **Modules Level 3**       |
+|---------------------|-----------------------|---------------------------|
+| 123_Input           | 1_Download            | 1_Download_AQ_EEA         |
+| 123_Input           | 1_Download            | 1_Download_AQ_CAMS        |
+| 123_Input           | 1_Download            | 1_Download_WE_C3S         |
+| 123_Input           | 1_Download            | 1_Download_EM_CAMS        |
+| 123_Input           | 2_Preprocessing       | 2_Preprocessing_AQ_EEA    |
+| 123_Input           | 2_Preprocessing       | 2_Preprocessing_AQ_CAMS   |
+| 123_Input           | 2_Preprocessing       | 2_Preprocessing_WE_C3S    |
+| 123_Input           | 2_Preprocessing       | 2_Preprocessing_EM_CAMS   |
+| 123_Input           | 3_Daily               | 3_Daily_AQ_EEA            |
+| 123_Input           | 3_Daily               | 3_Daily_AQ_CAMS           |
+| 123_Input           | 3_Daily               | 3_Daily_WE_C3S            |
+| 123_Input           | 3_Daily               | 3_Daily_EM_CAMS           |
+| 45_Output           | 4_HighResolution      | 4_HighResolution_WE_IDW   |
+| 45_Output           | 4_HighResolution      | 4_HighResolution_EM_IDW   |
+| 45_Output           | 4_HighResolution      | 4_HighResolution_AQ_FRK   |
+| 45_Output           | 5_Municipalities      | 5_Municipalities_AQ       |
+| 45_Output           | 5_Municipalities      | 5_Municipalities_WE       |
+| 45_Output           | 5_Municipalities      | 5_Municipalities_EM       |
+
+
 
 
 
