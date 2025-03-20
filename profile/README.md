@@ -102,26 +102,26 @@ To reach the ultimate goal of the GRINS project, we need an harmonised dataset a
 
 # For AMELIA
 
-| **Modules Level 1** | **Modules Level 2**   | **Modules Level 3**       |
-|---------------------|-----------------------|---------------------------|
-| 123_Input           | 1_Download            | 1_Download_AQ_EEA         |
-|                     |                       | 1_Download_AQ_CAMS        |
-|                     |                       | 1_Download_WE_C3S         |
-|                     |                       | 1_Download_EM_CAMS        |
-|                     | 2_Preprocessing       | 2_Preprocessing_AQ_EEA    |
-|                     |                       | 2_Preprocessing_AQ_CAMS   |
-|                     |                       | 2_Preprocessing_WE_C3S    |
-|                     |                       | 2_Preprocessing_EM_CAMS   |
-|                     | 3_Daily               | 3_Daily_AQ_EEA            |
-|                     |                       | 3_Daily_AQ_CAMS           |
-|                     |                       | 3_Daily_WE_C3S            |
-|                     |                       | 3_Daily_EM_CAMS           |
-| 45_Output           | 4_HighResolution      | 4_HighResolution_WE_IDW   |
-|                     |                       | 4_HighResolution_EM_IDW   |
-|                     |                       | 4_HighResolution_AQ_FRK   |
-|                     | 5_Municipalities      | 5_Municipalities_AQ       |
-|                     |                       | 5_Municipalities_WE       |
-|                     |                       | 5_Municipalities_EM       |
+| **Modules Level 1** | **Modules Level 2**   | **Modules Level 3**       | GitHub Repo | version | R core scripts        | Additional R scripts                                                        |
+|---------------------|-----------------------|---------------------------|-------------|---------|-----------------------|-----------------------------------------------------------------------------|
+| 123_Input           | 1_Download            | 1_Download_AQ_EEA         | AQ-EEA      | v.1.0.0 | EEA_download.R        | EEA_download(for).R                                                         |
+|                     |                       | 1_Download_AQ_CAMS        | AQ-CAMS     | v.1.0.0 | CAMS_download.R       | functions.R                                                                 |
+|                     |                       | 1_Download_WE_C3S         | WE-C3S      | v.1.0.0 | C3S_download.R        |
+|                     |                       | 1_Download_EM_CAMS        | EM-CAMS     | v.1.0.0 | ? | ? |
+|                     | 2_Preprocessing       | 2_Preprocessing_AQ_EEA    | AQ-EEA      | v.1.0.0 | EEA_preprocessing.R   | EEA_descriptive_statistics.R, classify_problematic_rawfiles.R, functions.R  |
+|                     |                       | 2_Preprocessing_AQ_CAMS   | AQ-CAMS     | v.1.0.0 | CAMS_download.R       | functions.R                                                                 |
+|                     |                       | 2_Preprocessing_WE_C3S    | WE-C3S      | v.1.0.0 | C3S_HtoD.R            | functions.R                                                                 |
+|                     |                       | 2_Preprocessing_EM_CAMS   | EM-CAMS     | v.1.0.0 | ? | ? |
+|                     | 3_Daily               | 3_Daily_AQ_EEA            | AQ-EEA      | v.1.0.0 | EEA_HtoD.R            | EEA_metadata.R, EEA_merging.R, functions.R                                  |
+|                     |                       | 3_Daily_AQ_CAMS           | AQ-CAMS     | v.1.0.0 | CAMS_HtoD.R           | functions.R, CAMS_export.R, functions.R                                     |
+|                     |                       | 3_Daily_WE_C3S            | WE-C3S      | v.1.0.0 | C3S_HtoD.R            | C3S_QualityCheck.R, functions.R                                             |
+|                     |                       | 3_Daily_EM_CAMS           | EM-CAMS     | v.1.0.0 | ? | ? |
+| 45_Output           | 4_HighResolution      | 4_HighResolution_WE_Modelling   | ? | ? | ? |
+|                     |                       | 4_HighResolution_EM_Modelling   | ? | ? | ? |
+|                     |                       | 4_HighResolution_AQ_Modelling   | AQ-Modelling | v.3.0.2 | AQ_Modelling_v302_FRK_NO2.R | all the repo |
+|                     | 5_Municipalities      | 5_Municipalities_AQ       | ? | ? | ? |
+|                     |                       | 5_Municipalities_WE       | ? | ? | ? |
+|                     |                       | 5_Municipalities_EM       | ? | ? | ? |
 
 
 
