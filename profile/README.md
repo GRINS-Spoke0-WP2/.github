@@ -32,7 +32,7 @@ Work is mainly divided in two parts:
 - Input data
 - Statistical modelling
 
-## Input Data 
+## Input Datasets
 
 Environmental data include different dimensions represented here by different acronyms: **AQ** for Air Quality, **WE** for Weather, **EM** for Emissions. Within the same dimension, data can be substantially different: observed by land monitoring stations, measured by satellites, produced by mathematical models, and others. Several different organisations managing the release of these data, use different procedures. For this reason, the pair dimension-source is used to identify a dataset. Each dataset has his own repository. For example, the air quality data (AQ) downloaded from the European Environmental Agency (EEA) is a repository called **AQ-EEA**. Each repository containes the code used from the download to the final dataset. Common tasks operated with R routines within these repositories are: automatic download, converting format (e.g. from csv or netcdf to Rdata), changing temporal resolution (e.g. from hourly to daily), solving critical situations about the quality of raw data (e.g. errors in the raw data), quality check (e.g. removing anomalies in the data). For data, the following repositories are available:
 
@@ -43,11 +43,11 @@ Environmental data include different dimensions represented here by different ac
 
 #### Input data
 _Table 1: Summary of inputs_
+
 | **Dim** | **Source** | **GitHub repo** | **version** | **Dataset**            | **Brief description**    | **Period** | **Variables selected**                                                                                                         | **temporal resolution** | **spatial resolution** |
 |---------|------------|-----------------|-------------|------------------------|--------------------------|------------|--------------------------------------------------------------------------------------------------------------------------------|-------------------------|------------------------|
-| AQ      | EEA        | AQ-EEA          | v.1.0.0     | Airbase                | measured air pollution   | -          | -                                                                                                                              | -                       | -                      |
 | AQ      | EEA        | AQ-EEA          | v.1.0.0     | E1a                    | measured air pollution   | 2013-2022  | CO, NH3, NO, NO2, O3, PM2.5, PM10, SO2                                                                                         | hourly,bi-hourly, daily | point referenced       |
-| AQ      | EEA        | AQ-EEA          | v.1.0.0     | E2a                    | measured air pollution   | 2023       | CO, NH3, NO, NO2, O3, PM2.5, PM10, SO2                                                                                         |                         |                        |
+| AQ      | EEA        | AQ-EEA          | v.1.0.0     | E2a                    | measured air pollution   | 2023       | CO, NH3, NO, NO2, O3, PM2.5, PM10, SO2                                                                                         | hourly,bi-hourly, daily | point referenced       |
 | AQ      | CAMS       | AQ-CAMS         | v.1.0.0     | air quality reanalysis | air pollutant from CTMs  | 2013-2023  | NO2, CO, NH3, NMVOC, NO, O3, PM2.5, PM10, SO2                                                                                  | hourly                  | 0.1° x 0.1°            |
 | WE      | C3S        | WE-C3S          | v.1.0.0     | ERA5Land               | land-weather reanalysis  | 2013-2023  | high/low vegetation index, relative humidity, surf solar radiation, temperature, total precipitation, wind direction and speed | hourly                  | 0.1° x 0.1°            |
 | WE      | C3S        | WE-C3S          | v.1.0.0     | ERA5 Single Level      | weather model reanalysis | 2013-2023  | boundary layer height                                                                                                          | hourly                  | 0.25° x 0.25°          |
@@ -57,6 +57,7 @@ _Table 1: Summary of inputs_
 
 #### Intermediate transformation
 _Table 2: Summary of intermediates transformation_
+
 | **Dim** | **Source** | **GitHub repo** | **version** | **spatial transformation** | **techniques used (space)** | **temporal transformation** | **techniques used (time)**                  |
 |---------|------------|-----------------|-------------|----------------------------|-----------------------------|-----------------------------|---------------------------------------------|
 | AQ      | EEA        | AQ-EEA          | v.1.0.0     | none                       | none                        | hourly/bi-hourly -> daily   | kalman smoother. Min,1q,mean,med,3q,max     |
@@ -69,18 +70,17 @@ _Table 2: Summary of intermediates transformation_
 
 #### Outputs
 _Table 3: Summary of outputs_
-| **Dim** | **Source** | **GitHub repo** | **version** | **period** | **temporal resolution** | **spatial resolution** | **#files** | **overall output dimension** | **format** |
-|---------|------------|-----------------|-------------|------------|-------------------------|------------------------|------------|------------------------------|------------|
-| AQ      | EEA        | AQ-EEA          | v.1.0.0     |            | -                       | -                      | -          | -                            | -          |
-| AQ      | EEA        | AQ-EEA          | v.1.0.0     | 2013-2023  | daily                   | point-ref              | 1          | 160/870 Mb                   | Rdata/csv  |
-| AQ      | EEA        | AQ-EEA          | v.1.0.0     | 2013-2023  | daily                   | point-ref              | 1          | 160/870 Mb                   | Rdata/csv  |
-| AQ      | CAMS       | AQ-CAMS         | v.1.0.0     | 2013-2023* | daily                   | 0.1° x 0.1°            | 80         | 2.4 Gb                       | Rdata      |
-| WE      | C3S        | WE-C3S          | v.0.0.1     | 2019-2023  | daily                   | 0.1° x 0.1°            | 1          | 1 Gb                         | netcdf     |
-| WE      | C3S        | WE-C3S          | v.0.0.1     | -          | -                       | -                      | -          | -                            | -          |
-| WE      | C3S        | WE-C3S          | v.1.0.0     | 2013-2023  | daily                   | 0.1° x 0.1°            | ?          | ?                            | ?          |
-| WE      | C3S        | WE-C3S          | v.1.0.0     | 2013-2023  | daily                   | 0.25° x 0.25°          | 1          | 54 Mb                        | Rdata      |
-| EM      | CAMS       | EM-CAMS         | v.0.0.1     | 2019-2023  | daily                   | 0.1° x 0.1°            | 1          | 1.83 Gb / 83 Mb              | csv/Rdata  |
 
+| **Dim** | **Source** | **GitHub repo** | **version** | **period** | **temporal resolution** | **spatial resolution** | **#files** | **overall output dimension** | **format** | **file location**   |
+|---------|------------|-----------------|-------------|------------|-------------------------|------------------------|------------|------------------------------|------------|---------------------|
+| AQ      | EEA        | AQ-EEA          | v.1.0.0     | 2013-2023  | daily                   | point-ref              | 1          | 160/870 Mb                   | Rdata/csv  | data/daily          |
+| AQ      | CAMS       | AQ-CAMS         | v.1.0.0     | 2013-2023* | daily                   | 0.1° x 0.1°            | 80         | 2.4 Gb                       | Rdata      | data/1p1y           |
+| WE      | C3S        | WE-C3S          | v.0.0.1     | 2019-2023  | daily                   | 0.1° x 0.1°            | 1          | 1 Gb                         | netcdf     | data/ERA5Land/daily |
+| WE      | C3S        | WE-C3S          | v.1.0.0     | 2013-2023  | daily                   | 0.1° x 0.1°            | 9          | 1.337 Gb                     | Rdata      | data/ERA5Land/daily |
+| WE      | C3S        | WE-C3S          | v.1.0.0     | 2013-2023  | daily                   | 0.25° x 0.25°          | 10         | 413 Mb                       | Rdata      | data/ERA5SL/daily   |
+| EM      | CAMS       | EM-CAMS         | v.0.0.1     | 2019-2023  | daily                   | 0.1° x 0.1°            | 1          | 1.83 Gb / 83 Mb              | csv/Rdata  | ? |
+
+Not available for all pollutants
 
 ### Air Quality data (AQ)
 
@@ -98,9 +98,11 @@ Emissions play a vital role in studying air quality, as they are the primary sou
 
 ## Statistical modelling
 
-To reach the ultimate goal of the GRINS project, we need an harmonised dataset at municipal level, daily, containing all the variables considered. However, while administrative data come naturally at municipal level, environmental data can have different resolutions, as points-referenced or grids, but almost never at municipal level. For the change of the spatial resolution we use a statistical modelling approach. The repositories linked to these operations are under the dimension **FRK-Modelling** (Fixed Rank Kriging) that is the acronym of the model used to tackle the problems of change of support and up/down-scaling faced during the change of spatial resolution. For meteorological variables, considering the high-quality of ERA5s products, a simple Inverse Distance Weighted (IDW) interpolation is made to convert to municipal data. 
+To reach the ultimate goal of the GRINS project, we need an harmonised dataset at municipal level, daily, containing all the variables considered. However, while administrative data come naturally at municipal level, environmental data can have different resolutions, as points-referenced or grids, but almost never at municipal level. For the change of the spatial resolution we use a statistical modelling approach. The repositories linked to these operations are under the dimension **FRK-Modelling** (Fixed Rank Kriging) that is the acronym of the model used to tackle the problems of change of support and up/down-scaling faced during the change of spatial resolution. For meteorological variables, considering the high-quality of ERA5s products, a simple Inverse Distance Weighted (IDW) interpolation is made to downscale original variables, in **WE-Modelling**.
 
-# For AMELIA
+
+
+# Overview of the entire process (for AMELIA)
 
 | **Modules Level 1** | **Modules Level 2**   | **Modules Level 3**       | GitHub Repo           | version | R core scripts        | Additional R scripts                                                        |
 |---------------------|-----------------------|---------------------------|-----------------------|---------|-----------------------|-----------------------------------------------------------------------------|
@@ -118,7 +120,7 @@ To reach the ultimate goal of the GRINS project, we need an harmonised dataset a
 |                     |                       | 3_Daily_EM_CAMS           | EM-CAMS               | v.1.0.0 | ? | ? |
 | 45_Output           | 4_HighResolution      | 4_HighResolution_WE_Modelling             | ?        | ? | ? |
 |                     |                       | 4_HighResolution_EM_Modelling             | ?        | ? | ? |
-|                     |                       | 4_HighResolution_AQ_Modelling             | AQ-Modelling | v.3.0.2 | AQ_Modelling_v302_FRK_NO2.R | all the repo |
+|                     |                       | 4_HighResolution_AQ_Modelling             | AQ-Modelling | v.3.0.2 | AQ_Modelling_v302_FRK_NO2.R | several |
 |                     | 5_Municipalities      | 5_Municipalities_AQ                 | ?        | ? | ? |
 |                     |                       | 5_Municipalities_WE                 | ?        | ? | ? |
 |                     |                       | 5_Municipalities_EM                 | ?        | ? | ? |
